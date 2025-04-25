@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tropic Treats – Product</title>
+  <title>Tropic Treats – Watermelon Wave</title>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Product",
-      "name": "Product Name – Hemp-Derived D9 Gummies",
-      "image": ["product-image.png"],
-      "description": "Product description.",
+      "name": "Watermelon Wave – Hemp-Derived D9 Gummies",
+      "image": ["images/watermelon.png"],
+      "description": "Refreshing watermelon gummies, perfect for summer chills.",
       "brand": {"@type": "Brand", "name": "Tropic Treats"},
       "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "100"},
       "offers": {
         "@type": "Offer",
-        "url": "https://example.com/products/product-id",
+        "url": "https://example.com/products/watermelon-wave",
         "priceCurrency": "USD",
         "price": "29.99",
         "priceValidUntil": "2025-12-31",
@@ -31,9 +31,8 @@
       padding: 0;
       color: #111;
       overflow-x: hidden;
+      background: linear-gradient(to bottom, #f87171, #4ade80);
     }
-    body.blueberry { background: linear-gradient(to bottom, #3b82f6, #bfdbfe); }
-    body.watermelon { background: linear-gradient(to bottom, #f87171, #4ade80); }
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -138,14 +137,14 @@
     }
   </style>
 </head>
-<body class="product-class">
-  <img class="floating-fruit fruit1" src="fruit-icon1.png" alt="Floating Fruit">
-  <img class="floating-fruit fruit2" src="fruit-icon2.png" alt="Floating Fruit">
+<body class="watermelon">
+  <img class="floating-fruit fruit1" src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Floating Fruit">
+  <img class="floating-fruit fruit2" src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Floating Fruit">
 
   <div class="container">
     <div class="product-layout">
       <div class="product-image">
-        <img src="product-image.png" alt="Product Name" loading="lazy">
+        <img src="https://via.placeholder.com/300x300.png?text=Watermelon+Gummies" alt="Watermelon Wave" loading="lazy">
       </div>
       <div class="product-info">
         <div class="brand">Brand: Tropic Treats™</div>
@@ -157,62 +156,50 @@
           <a href="/blueberry.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🫐 Blueberry</a>
           <a href="/watermelon.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍉 Watermelon</a>
         </div>
-        <div class="title">[1-Pack] Product Name – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC</div>
+        <div class="title">[1-Pack] Watermelon Wave – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC</div>
         <div class="stars" style="margin: 0.5rem 0 1rem; color: #d6336c; font-size: 1.1rem;">
-          <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">🍓🍓🍓🍓☆ 4.7</a> | 
+          <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">🍉🍉🍉🍉☆ 4.7</a> | 
           <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">100 reviews</a>
         </div>
         <div class="price">$29.99 <span class="strike">$34.99</span></div>
         <div class="unit-price">($1.15 / gummy)</div>
         <div class="coupon">💥 Save 15% when you subscribe & vibe</div>
-        <div class="flavor"><strong>Flavor:</strong> Product Flavor</div>
+        <div class="flavor"><strong>Flavor:</strong> Watermelon</div>
         <div class="type"><strong>Type:</strong> Hemp-Derived Delta-9 THC</div>
         <div class="legal">✅ Legal under 2018 Farm Bill – Contains < 0.3% THC by dry weight</div>
         <button class="buy-button" onclick="addToCart()">Add to Bag – $29.99</button>
-        <div class="cart-message" id="cart-message">🍓 Product Name has been added to your bag!</div>
+        <div class="cart-message" id="cart-message">🍉 Watermelon Wave has been added to your bag!</div>
       </div>
     </div>
 
     <div id="reviews" style="margin-top: 3rem;">
       <h2>Customer Reviews</h2>
-      <p><strong>Liv T.</strong> – <em>"Really tasty and chill vibes!"</em> 🍓🍓🍓🍓🍓</p>
-      <p><strong>Marcus J.</strong> – <em>"Great flavor, super relaxing."</em> 🍓🍓🍓🍓☆</p>
-      <p><strong>Jenna R.</strong> – <em>"Loved the taste, felt amazing."</em> 🍓🍓🍓🍓🍓</p>
+      <p><strong>Liv T.</strong> – <em>"Super refreshing, total summer vibes!"</em> 🍉🍉🍉🍉🍉</p>
+      <p><strong>Marcus J.</strong> – <em>"Great flavor, so chill."</em> 🍉🍉🍉🍉☆</p>
+      <p><strong>Jenna R.</strong> – <em>"Loved the taste, felt like a beach day."</em> 🍉🍉🍉🍉🍉</p>
     </div>
   </div>
 
   <div id="slide-reviews" style="position: fixed; right: -400px; top: 0; width: 350px; height: 100%; background: #fff0f5; border-left: 5px solid #ff85a2; box-shadow: -5px 0 20px rgba(0,0,0,0.1); padding: 1.5rem; z-index: 9999; transition: right 0.4s ease-in-out; overflow-y: auto;">
     <h2 style="color: #d6336c; font-family: 'Comic Sans MS', cursive;">💬 Sweet Reviews</h2>
-    <p><strong>Liv T.</strong><br><em>"Really tasty and chill vibes!"</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍓🍓🍓🍓🍓</span></p>
+    <p><strong>Liv T.</strong><br><em>"Super refreshing, total summer vibes!"</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍉🍉🍉🍉🍉</span></p>
     <hr>
-    <p><strong>Marcus J.</strong><br><em>"Great flavor, super relaxing."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍓🍓🍓🍓☆</span></p>
+    <p><strong>Marcus J.</strong><br><em>"Great flavor, so chill."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍉🍉🍉🍉☆</span></p>
     <hr>
-    <p><strong>Jenna R.</strong><br><em>"Loved the taste, felt amazing."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍓🍓🍓🍓🍓</span></p>
+    <p><strong>Jenna R.</strong><br><em>"Loved the taste, felt like a beach day."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">🍉🍉🍉🍉🍉</span></p>
     <hr>
-    <button onclick="closeReviews()" style="margin-top: 1rem; background: #ff85a2; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; cursor: pointer;">Close 🍓</button>
+    <button onclick="closeReviews()" style="margin-top: 1rem; background: #ff85a2; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; cursor: pointer;">Close 🍉</button>
   </div>
   <button onclick="openReviews()" class="review-button">🍭 Read Reviews</button>
 
   <script>
-    // Product data
     const productData = {
-      blueberry: {
-        id: 'blueberry-bliss',
-        name: 'Blueberry Bliss',
-        price: 29.99,
-        description: 'Juicy blueberry gummies with a relaxing, mellow vibe.',
-        image: 'blueberry.png',
-        flavor: 'Blueberry',
-        icon1: 'https://cdn-icons-png.flaticon.com/512/590/590685.png',
-        icon2: 'https://cdn-icons-png.flaticon.com/512/135/135620.png',
-        bodyClass: 'blueberry'
-      },
       watermelon: {
         id: 'watermelon-wave',
         name: 'Watermelon Wave',
         price: 29.99,
         description: 'Refreshing watermelon gummies, perfect for summer chills.',
-        image: 'watermelon.png',
+        image: 'https://via.placeholder.com/300x300.png?text=Watermelon+Gummies',
         flavor: 'Watermelon',
         icon1: 'https://cdn-icons-png.flaticon.com/512/590/590685.png',
         icon2: 'https://cdn-icons-png.flaticon.com/512/135/135620.png',
@@ -220,19 +207,17 @@
       }
     };
 
-    // Set product data
     const page = window.location.pathname.split('/').pop().replace('.html', '');
-    const product = productData[page] || productData.blueberry;
+    const product = productData[page] || productData.watermelon;
     document.querySelector('.title').textContent = `[1-Pack] ${product.name} – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC`;
     document.querySelector('.price').firstChild.textContent = `$${product.price}`;
-    document.querySelector('.flavor').innerHTML = `<strong>Flavor:</strong> ${product.flavor}`;
+    document 🙂querySelector('.flavor').innerHTML = `<strong>Flavor:</strong> ${product.flavor}`;
     document.querySelector('.product-image img').src = product.image;
-    document.querySelector('.cart-message').textContent = `🍓 ${product.name} has been added to your bag!`;
+    document.querySelector('.cart-message').textContent = `🍉 ${product.name} has been added to your bag!`;
     document.querySelector('.floating-fruit.fruit1').src = product.icon1;
     document.querySelector('.floating-fruit.fruit2').src = product.icon2;
     document.body.className = product.bodyClass;
 
-    // Cart
     function addToCart() {
       const item = { id: product.id, name: product.name, price: product.price, quantity: 1 };
       let cart = JSON.parse(localStorage.getItem('tropicCart')) || [];
@@ -243,7 +228,6 @@
       document.getElementById('cart-message').style.display = 'block';
     }
 
-    // Review slider
     function openReviews() { document.getElementById('slide-reviews').style.right = '0'; }
     function closeReviews() { document.getElementById('slide-reviews').style.right = '-400px'; }
   </script>
