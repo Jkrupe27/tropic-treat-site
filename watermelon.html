@@ -149,12 +149,12 @@
       <div class="product-info">
         <div class="brand">Brand: Tropic Treats™</div>
         <div style="margin-top: 0.5rem; font-size: 0.9rem;">
-          <a href="/" style="margin-right: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🏠 Home</a>
-          <a href="/cart" style="text-decoration: none; color: #d6336c; font-weight: bold;">🛍️ View Cart</a>
-          <a href="/strawberry.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍓 Strawberry</a>
-          <a href="/green-apple.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍏 Green Apple</a>
-          <a href="/blueberry.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🫐 Blueberry</a>
-          <a href="/watermelon.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍉 Watermelon</a>
+          <a href="index.html" style="margin-right: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🏠 Home</a>
+          <a href="cart.html" style="text-decoration: none; color: #d6336c; font-weight: bold;">🛍️ View Cart</a>
+          <a href="strawberry.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍓 Strawberry</a>
+          <a href="green-apple.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍏 Green Apple</a>
+          <a href="blueberry.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🫐 Blueberry</a>
+          <a href="watermelon.html" style="margin-left: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🍉 Watermelon</a>
         </div>
         <div class="title">[1-Pack] Watermelon Wave – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC</div>
         <div class="stars" style="margin: 0.5rem 0 1rem; color: #d6336c; font-size: 1.1rem;">
@@ -211,7 +211,7 @@
     const product = productData[page] || productData.watermelon;
     document.querySelector('.title').textContent = `[1-Pack] ${product.name} – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC`;
     document.querySelector('.price').firstChild.textContent = `$${product.price}`;
-    document 🙂querySelector('.flavor').innerHTML = `<strong>Flavor:</strong> ${product.flavor}`;
+    document.querySelector('.flavor').innerHTML = `<strong>Flavor:</strong> ${product.flavor}`;
     document.querySelector('.product-image img').src = product.image;
     document.querySelector('.cart-message').textContent = `🍉 ${product.name} has been added to your bag!`;
     document.querySelector('.floating-fruit.fruit1').src = product.icon1;
