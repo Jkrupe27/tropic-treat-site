@@ -159,7 +159,7 @@
         </div>
         <div class="title">[1-Pack] Product Name – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC</div>
         <div class="stars" style="margin: 0.5rem 0 1rem; color: #d6336c; font-size: 1.1rem;">
-          <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">🍓🍓🍓🍓☆ 4.7</a> | 
+          <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">🫐🫐🫐🫐☆ 4.7</a> | 
           <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">100 reviews</a>
         </div>
         <div class="price">$29.99 <span class="strike">$34.99</span></div>
@@ -169,15 +169,15 @@
         <div class="type"><strong>Type:</strong> Hemp-Derived Delta-9 THC</div>
         <div class="legal">✅ Legal under 2018 Farm Bill – Contains < 0.3% THC by dry weight</div>
         <button class="buy-button" onclick="addToCart()">Add to Bag – $29.99</button>
-        <div class="cart-message" id="cart-message">🍓 Product Name has been added to your bag!</div>
+        <div class="cart-message" id="cart-message">🫐 Product Name has been added to your bag!</div>
       </div>
     </div>
 
     <div id="reviews" style="margin-top: 3rem;">
       <h2>Customer Reviews</h2>
-      <p><strong>Liv T.</strong> – <em>"Really tasty and chill vibes!"</em> 🍓🍓🍓🍓🍓</p>
-      <p><strong>Marcus J.</strong> – <em>"Great flavor, super relaxing."</em> 🍓🍓🍓🍓☆</p>
-      <p><strong>Jenna R.</strong> – <em>"Loved the taste, felt amazing."</em> 🍓🍓🍓🍓🍓</p>
+      <p><strong>Liv T.</strong> – <em>"Really tasty and chill vibes!"</em> 🫐🫐🫐🫐🫐</p>
+      <p><strong>Marcus J.</strong> – <em>"Great flavor, super relaxing."</em> 🫐🫐🫐🫐🫐</p>
+      <p><strong>Jenna R.</strong> – <em>"Loved the taste, felt amazing."</em> 🫐🫐🫐🫐🫐</p>
     </div>
   </div>
 
@@ -223,7 +223,7 @@
     // Set product data
     const page = window.location.pathname.split('/').pop().replace('.html', '');
     const product = productData[page] || productData.blueberry;
-    document.querySelector('.title').textContent = `[1-Pack] ${product.name} – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC`;
+    document.querySelector('.title').textContent = ${product.name} ;
     document.querySelector('.price').firstChild.textContent = `$${product.price}`;
     document.querySelector('.flavor').innerHTML = `<strong>Flavor:</strong> ${product.flavor}`;
     document.querySelector('.product-image img').src = product.image;
