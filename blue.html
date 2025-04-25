@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUSSIN' Blueberry – Tropic Treats</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "BUSSIN' Blueberry – Hemp-Derived D9 Gummies",
+      "image": ["blue.png"],
+      "description": "An electric hit of chill – icy, fruity, and mind-bendingly smooth.",
+      "brand": { "@type": "Brand", "name": "Tropic Treats" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "112"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://example.com/products/bussin-blueberry",
+        "priceCurrency": "USD",
+        "price": "29.99",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <style>
+    .coupon {
+      background-color: #cfdfff;
+      color: #111;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #b6d0ff, #d2e8ff);
+      margin: 0;
+      padding: 2rem;
+      color: #111;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      color: #2e4b9b;
+    }
+    .flavor-switcher {
+      margin: 1rem 0;
+    }
+    .stars {
+      color: #ffd700;
+      font-size: 1.1rem;
+      margin: 0.5rem 0 1rem;
+    }
+    .buy-button {
+      background: linear-gradient(to right, #7faeff, #4c74ff);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .buy-button:hover {
+      background: #3c5bda;
+    }
+    .reviews {
+      margin-top: 2rem;
+    }
+    .reviews p {
+      background: #eef3ff;
+      padding: 1rem;
+      border-left: 4px solid #4c74ff;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+  @keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>BUSSIN' Blueberry</h1>
+    <div style="margin-bottom: 1rem; font-size: 0.95rem;">
+      <a href="index.html" style="margin-right: 1rem; text-decoration: none; color: #2e4b9b; font-weight: bold;">🏠 Home</a>
+      <a href="cart.html" style="text-decoration: none; color: #2e4b9b; font-weight: bold;">🛍️ View Cart</a>
+    </div>
+
+    <div class="flavor-switcher">
+      <label for="flavor">Choose Flavor:</label>
+      <select id="flavor" onchange="location = this.value">
+        <option value="index.html">🍓 Strawberry Chill</option>
+        <option value="blue.html" selected>💙 BUSSIN' Blueberry</option>
+        <option value="watermelon.html">🍉 Watermelon Waves</option>
+      </select>
+    </div>
+
+    <img src="blue.png" alt="BUSSIN' Blueberry Gummies" style="width: 100%; border-radius: 12px; margin-top: 1rem;">
+
+    <div class="stars" style="font-size: 1.3rem; animation: pulse 2s infinite alternate;">💙💙💙💙💙 4.9 (112 reviews)</div>
+
+    <p><strong>$29.99</strong> – Hemp-Derived Delta-9 THC – 26 Gummies</p>
+    <div class="coupon">💥 Save 15% when you subscribe & vibe</div>
+    <p><strong>Flavor:</strong> Blue Raspberry</p>
+    <p><strong>Type:</strong> Hemp-Derived Delta-9 THC</p>
+    <p><em>Legal under 2018 Farm Bill. Contains less than 0.3% THC by dry weight.</em></p>
+
+    <button class="buy-button" onclick="addToCart();">Add to Bag – $29.99</button>
+
+    <div class="reviews">
+  <h3>Customer Reviews</h3>
+  <p>💙 <strong>Dre L.</strong> – "Tasted like a sour slushie and had me seeing colors I didn’t know existed. Bussin fr."</p>
+  <p>💙 <strong>Tina V.</strong> – "Put on Lo-fi beats and my whole room turned into a pixelated cloud."</p>
+  <p>💙 <strong>Zack M.</strong> – "Like eating a blue firework made of chill. Love this one."</p>
+</div>
+<div id="review-slide" style="position:fixed; bottom:10px; right:10px; background:#4c74ff; color:white; padding:1rem 1.25rem; border-radius:10px; box-shadow:0 6px 16px rgba(0,0,0,0.2); font-size:0.9rem; animation: slideUp 0.6s ease-out 0.3s both;">
+  💙 "Yo, these Blueberry joints got me vibin on a glacier."
+</div>
+<style>
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+</style>
+  </div>
+
+  <script>
+    function addToCart() {
+      const product = {
+        id: 'bussin-blueberry',
+        name: "BUSSIN' Blueberry",
+        price: 29.99,
+        quantity: 1
+      };
+      let cart = JSON.parse(localStorage.getItem('tropicCart')) || [];
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(product);
+      }
+      localStorage.setItem('tropicCart', JSON.stringify(cart));
+      window.location.href = 'cart.html';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tropic Treats – Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #ffa07a, #ffebcd);
+      text-align: center;
+    }
+    .logo {
+      max-width: 300px;
+      margin: 2rem auto 1rem;
+    }
+    h1 {
+      color: #222;
+      font-size: 2rem;
+    }
+    p.tagline {
+      color: #444;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .tile {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+    .tile:hover {
+      transform: scale(1.03);
+    }
+    .tile img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    .tile h3 {
+      margin-bottom: 0.5rem;
+    }
+    .tile p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+    .tile a {
+      display: inline-block;
+      background: #ff6f91;
+      color: white;
+      padding: 0.5rem 1.25rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .tile a:hover {
+      background: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+  <img src="tropic-logo.png" alt="Tropic Treats Logo" class="logo">
+  <h1>Welcome to Tropic Treats</h1>
+  <div style="margin-bottom: 1rem; font-size: 0.95rem;">
+    <a href="index.html" style="margin-right: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🏠 Home</a>
+    <a href="cart.html" style="text-decoration: none; color: #d6336c; font-weight: bold;">🛍️ View Cart</a>
+  </div>
+  <p class="tagline">Bite-sized bliss. Barefoot legal.</p>
+
+  <div class="tiles">
+    <div class="tile">
+      <img src="strawberrychill.png" alt="Strawberry Chill">
+      <h3>🍓 Strawberry Chill</h3>
+      <p>Sweet, ripe, and laced with sunshine. Fruity bliss with a mellow afterglow.</p>
+      <a href="strawberry.html">Shop Now</a>
+    </div>
+    <div class="tile">
+      <img src="blueberry.png" alt="BUSSIN' Blueberry">
+      <h3>💙 BUSSIN' Blueberry</h3>
+      <p>An icy slush kick of flavor with a buzz that's lowkey euphoric.</p>
+      <a href="blue.html">Shop Now</a>
+    </div>
+    <div class="tile">
+      <img src="watermelon.png" alt="Watermelon Waves">
+      <h3>🍉 Watermelon Waves</h3>
+      <p>Float into fruity oblivion. Mellow, nostalgic, and endlessly juicy.</p>
+      <a href="watermelon.html">Shop Now</a>
+    </div>
+  </div>
+</body>
+</html>

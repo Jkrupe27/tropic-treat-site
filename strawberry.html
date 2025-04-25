@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tropic Treats – Strawberry Chill</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Strawberry Chill – Hemp-Derived D9 Gummies",
+      "image": [
+        "strawberrychill.png"
+      ],
+      "description": "Sweet, ripe, and laced with sunshine. Fruity bliss with a mellow afterglow.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Tropic Treats"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.7",
+        "reviewCount": "128"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://example.com/products/strawberry-chill",
+        "priceCurrency": "USD",
+        "price": "29.99",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #a1ddf2, #f9b5d0);
+      margin: 0;
+      padding: 0;
+      color: #111;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+    .floating-fruit {
+      position: absolute;
+      width: 60px;
+      opacity: 0.2;
+      animation: float 8s infinite ease-in-out;
+    }
+    .fruit1 {
+      top: 5%;
+      left: 10%;
+    }
+    .fruit2 {
+      bottom: 8%;
+      right: 12%;
+      animation-delay: 2s;
+    }
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+    .product-layout {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      background: radial-gradient(circle at top left, #fff9f0 0%, #ffe9d6 100%), url('https://cdn.openai.com/chat-assets/tropic-treats-fruit-bg.png') no-repeat right bottom;
+      background-size: contain;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      backdrop-filter: blur(10px);
+      background-blend-mode: overlay;
+    }
+    .product-image {
+      flex: 1;
+    }
+    .product-image img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+    }
+    .product-info {
+      flex: 2;
+    }
+    .brand {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin: 0.5rem 0;
+    }
+    .stars {
+      color: #f0c14b;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .stars a {
+      color: #f0c14b;
+      text-decoration: none;
+    }
+    .price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #b12704;
+    }
+    .strike {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 1rem;
+    }
+    .unit-price {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .flavor,
+    .type {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+    .legal {
+      font-size: 0.85rem;
+      color: #008a00;
+      margin-top: 1rem;
+    }
+    .coupon {
+      background-color: #f7dfa5;
+      color: #111;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+    }
+    .buy-button {
+  background: linear-gradient(to right, #ff80ab, #ff4081);
+  border: none;
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+    .buy-button:hover {
+  background: linear-gradient(to right, #ff5e9c, #ff226f);
+}
+    .cart-message {
+      margin-top: 1rem;
+      background: #e7f3ea;
+      padding: 1rem;
+      border-left: 5px solid #34a853;
+      border-radius: 5px;
+      display: none;
+    }
+  @keyframes rainbow-fade {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+</style>
+</head>
+<body>
+  <img class="floating-fruit fruit1" src="https://cdn-icons-png.flaticon.com/512/135/135620.png" alt="Floating Gummy" />
+  <img class="floating-fruit fruit2" src="https://cdn-icons-png.flaticon.com/512/590/590685.png" alt="Floating Strawberry" />
+
+  <div class="container">
+    <div class="product-layout">
+      <div class="product-image">
+        <img src="strawberrychill.png" alt="Strawberry Chill Gummies" loading="lazy" />
+      </div>
+      <div class="product-info">
+        <div class="brand">Brand: Tropic Treats™</div>
+        <div style="margin-top: 0.5rem; font-size: 0.9rem;">
+          <a href="index.html" style="margin-right: 1rem; text-decoration: none; color: #d6336c; font-weight: bold;">🏠 Home</a>
+          <a href="cart.html" style="text-decoration: none; color: #d6336c; font-weight: bold;">🛍️ View Cart</a>
+        </div>
+        <div class="title">[1-Pack] Strawberry Chill – Hemp-Derived D9 Gummies – 26 Count – < 0.3% THC</div>
+        <div class="stars" style="margin: 0.5rem 0 1rem; color: #d6336c; font-size: 1.1rem;">
+  <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">
+    🍓🍓🍓🍓☆ 4.7</a> | <a href="#reviews" style="color: #d6336c; text-decoration: none; font-weight: bold;">128 reviews</a>
+</div>
+        <div class="price">$29.99 <span class="strike">$34.99</span></div>
+        <div class="unit-price">($1.15 / gummy)</div>
+        <div class="coupon">💥 Save 15% when you subscribe & vibe</div>
+        <div class="flavor"><strong>Flavor:</strong> Strawberry</div>
+        <div class="type"><strong>Type:</strong> Hemp-Derived Delta-9 THC</div>
+        <div class="legal">✅ Legal under 2018 Farm Bill – Contains < 0.3% THC by dry weight</div>
+        <button class="buy-button" onclick="addToCart()">Add to Bag – $29.99</button>
+        <div class="cart-message" id="cart-message">🍓 Strawberry Chill has been added to your bag!</div>
+      </div>
+    </div>
+
+    <div id="reviews" style="margin-top: 3rem;">
+  <h2>Customer Reviews</h2>
+  <p><strong>Liv T.</strong> – <em>"Yo. I ate half a gummy and spent 40 minutes giggling at clouds. 10/10 flavor. 11/10 vibes."</em> 🍓🍓🍓🍓🍓</p>
+  <p><strong>Marcus J.</strong> – <em>"I forgot I was mad at my roommate. Now we're boys again. This gummy is a peacemaker."</em> 🍓🍓🍓🍓🍓</p>
+  <p><strong>Jenna R.</strong> – <em>"Tasted like fruit, felt like a hammock on a cloud. I didn't even care my ex texted me."</em> 🍓🍓🍓🍓🍓</p>
+</div>
+  </div>
+
+  <script>
+    function addToCart() {
+      const product = {
+        id: 'strawberry-chill',
+        name: 'Strawberry Chill',
+        price: 29.99,
+        quantity: 1
+      };
+
+      let cart = JSON.parse(localStorage.getItem('tropicCart')) || [];
+
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(product);
+      }
+
+      localStorage.setItem('tropicCart', JSON.stringify(cart));
+      document.getElementById('cart-message').style.display = 'block';
+    }
+  </script>
+<div id="slide-reviews" style="position: fixed; right: -400px; top: 0; width: 350px; height: 100%; background: #fff0f5; border-left: 5px solid #ff85a2; box-shadow: -5px 0 20px rgba(0,0,0,0.1); padding: 1.5rem; z-index: 9999; transition: right 0.4s ease-in-out; overflow-y: auto;">
+  <h2 style="color: #d6336c; font-family: 'Comic Sans MS', cursive;">💬 Sweet Reviews</h2>
+  <p><strong>Liv T.</strong><br><em>"Yo. I ate half a gummy and spent 40 minutes giggling at clouds. 10/10 flavor. 11/10 vibes."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">
+  🍓🍓🍓🍓🍓
+</span></p>
+  <hr>
+  <p><strong>Marcus J.</strong><br><em>"I forgot I was mad at my roommate. Now we're boys again. This gummy is a peacemaker."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">
+  🍓🍓🍓🍓🍓
+</span></p>
+  <hr>
+  <p><strong>Jenna R.</strong><br><em>"Tasted like fruit, felt like a hammock on a cloud. I didn't even care my ex texted me."</em><br><span style="display: inline-block; animation: rainbow-fade 3s infinite alternate;">
+  🍓🍓🍓🍓🍓
+</span></p>
+  <hr>
+  <button onclick="closeReviews()" style="margin-top: 1rem; background: #ff85a2; color: white; border: none; padding: 0.5rem 1rem; border-radius: 8px; font-weight: bold; cursor: pointer;">Close 🍓</button>
+</div>
+<button onclick="openReviews()" style="position: fixed; right: 20px; bottom: 20px; background: #ff85a2; color: white; border: none; padding: 1rem 1.5rem; border-radius: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.2); font-size: 1rem; font-weight: bold; cursor: pointer; z-index: 9998;">🍭 Read Reviews</button>
+<script>
+  function openReviews() {
+    document.getElementById('slide-reviews').style.right = '0';
+  }
+  function closeReviews() {
+    document.getElementById('slide-reviews').style.right = '-400px';
+  }
+</script>
+</body>
+</html>

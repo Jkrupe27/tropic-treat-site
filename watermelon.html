@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Watermelon Waves – Tropic Treats</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Watermelon Waves – Hemp-Derived D9 Gummies",
+      "image": ["watermelon.png"],
+      "description": "Float into fruity oblivion – mellow, nostalgic, and endlessly juicy.",
+      "brand": { "@type": "Brand", "name": "Tropic Treats" },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "97"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://example.com/products/watermelon-waves",
+        "priceCurrency": "USD",
+        "price": "29.99",
+        "priceValidUntil": "2025-12-31",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f7caca, #fff2f2);
+      margin: 0;
+      padding: 2rem;
+      color: #111;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    h1 {
+      font-size: 2rem;
+      color: #d94f4f;
+    }
+    .flavor-switcher {
+      margin: 1rem 0;
+    }
+    .stars {
+      font-size: 1.3rem;
+      animation: pulse 2s infinite alternate;
+      margin: 0.5rem 0 1rem;
+    }
+    .buy-button {
+      background: linear-gradient(to right, #ff8b94, #ff5c5c);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .buy-button:hover {
+      background: #e74646;
+    }
+    .reviews {
+      margin-top: 2rem;
+    }
+    .reviews p {
+      background: #fff4f4;
+      padding: 1rem;
+      border-left: 4px solid #ff5c5c;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+  .coupon {
+      background-color: #ffe1e1;
+      color: #111;
+      padding: 0.5rem;
+      font-size: 0.9rem;
+      margin: 1rem 0;
+      border-radius: 5px;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.1); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Watermelon Waves</h1>
+    <div style="margin-bottom: 1rem; font-size: 0.95rem;">
+      <a href="index.html" style="margin-right: 1rem; text-decoration: none; color: #d94f4f; font-weight: bold;">🏠 Home</a>
+      <a href="cart.html" style="text-decoration: none; color: #d94f4f; font-weight: bold;">🛍️ View Cart</a>
+    </div>
+
+    <div class="flavor-switcher">
+      <label for="flavor">Choose Flavor:</label>
+      <select id="flavor" onchange="location = this.value">
+        <option value="index.html">🍓 Strawberry Chill</option>
+        <option value="blue.html">💙 BUSSIN' Blueberry</option>
+        <option value="watermelon.html" selected>🍉 Watermelon Waves</option>
+      </select>
+    </div>
+
+    <img src="watermelon.png" alt="Watermelon Waves Gummies" style="width: 100%; border-radius: 12px; margin-top: 1rem;">
+
+    <div class="stars">🍉🍉🍉🍉🍉 4.8 (97 reviews)</div>
+
+    <p><strong>$29.99</strong> – Hemp-Derived Delta-9 THC – 26 Gummies</p>
+    <div class="coupon">💥 Save 15% when you subscribe & vibe</div>
+    <p><strong>Flavor:</strong> Watermelon</p>
+    <p><strong>Type:</strong> Hemp-Derived Delta-9 THC</p>
+    <p><em>Legal under 2018 Farm Bill. Contains less than 0.3% THC by dry weight.</em></p>
+
+    <button class="buy-button" onclick="addToCart();">Add to Bag – $29.99</button>
+
+    <div class="reviews">
+      <h3>Customer Reviews</h3>
+      <p>🍉 <strong>Keisha R.</strong> – "Felt like I was in a watermelon pool float drifting through the cosmos."</p>
+      <p>🍉 <strong>Tommy L.</strong> – "One gummy turned a stressful day into a barefoot beach walk through my own mind."</p>
+      <p>🍉 <strong>Luis B.</strong> – "Like sipping a watermelon smoothie on a hammock made of clouds. 10/10."</p>
+    </div>
+
+    <div id="review-slide" style="position:fixed; bottom:10px; right:10px; background:#ff5c5c; color:white; padding:1rem 1.25rem; border-radius:10px; box-shadow:0 6px 16px rgba(0,0,0,0.2); font-size:0.9rem; animation: slideUp 0.6s ease-out 0.3s both;">
+      🍉 "I swear I floated through time on one of these."
+    </div>
+
+  </div>
+  <script>
+    function addToCart() {
+      const product = {
+        id: 'watermelon-waves',
+        name: "Watermelon Waves",
+        price: 29.99,
+        quantity: 1
+      };
+      let cart = JSON.parse(localStorage.getItem('tropicCart')) || [];
+      const existing = cart.find(item => item.id === product.id);
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push(product);
+      }
+      localStorage.setItem('tropicCart', JSON.stringify(cart));
+      window.location.href = 'cart.html';
+    }
+  </script>
+</body>
+</html>
